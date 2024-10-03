@@ -1,0 +1,26 @@
+* {
+    text-decoration: none;
+    margin: 0;
+}
+    /* CONTROL + SHIFT + A */
+a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:visited {
+    color: black;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    font-size: 20px;
+}
+
+nav {
+    background-color: red;
+    padding: 18px;
+}
