@@ -1,3 +1,8 @@
+main {
+    background-image: url(../IMG/Fondo.png);
+    background-size: 80%;
+
+}
 * {
     text-decoration: none;
     margin: 0;
@@ -5,7 +10,10 @@
     /* CONTROL + SHIFT + A */
 a {
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: black;
 }
 
 a:visited {
@@ -17,10 +25,94 @@ ul {
     display: flex;
     justify-content: space-between;
     padding: 0px 40px;
-    font-size: 20px;
+    font-size: 200%;
 }
 
 nav {
-    background-color: red;
+    background-color: #ab1111;
     padding: 18px;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: aliceblue;
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 80px;
+}
+p{
+    text-align: center;
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+}
+h2{
+    text-align: center;
+    color: aliceblue;
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+    background-image: url(../IMG/fondo_texto.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 0px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    margin-bottom: 5%;
+
+}
+.logo img{
+    width: 50%;
+
+
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner img{
+    width: 100%;
+}
+.seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion img{
+    width: 100%;
+}
+.info{
+    width: 40%;
+
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../IMG/fondo_texto.png);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px
+}
+.redes img{
+    width: 20%;
+    padding: 0px 20px;
+}
+.newsletter{
+    display: flex;
+    align-items: start;
 }
