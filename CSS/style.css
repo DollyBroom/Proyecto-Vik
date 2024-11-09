@@ -1,8 +1,3 @@
-main {
-    background-image: url(../IMG/Fondo.png);
-    background-size: 80%;
-
-}
 * {
     text-decoration: none;
     margin: 0;
@@ -14,6 +9,8 @@ a {
     font-weight: 800;
     font-style: normal;
     color: black;
+    display: flex;
+    align-items: center;
 }
 
 a:visited {
@@ -70,13 +67,12 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10em;
-    margin-bottom: 5%;
+
 
 }
 .logo img{
     width: 50%;
-
+    position: absolute;
 
 }
 .banner{
@@ -87,10 +83,13 @@ h2{
 .banner img{
     width: 100%;
 }
+
 .seccion{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10vw 0px
+
 }
 .seccion img{
     width: 100%;
@@ -115,15 +114,20 @@ h2{
 }
 .newsletter{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     background-color: black;
-    border-radius: 20px;
-    border: 5px white;
-    margin: 0px 5%;
+    padding: 0px 50px;
 }
 .imagen_nav{
-    width: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imagen_nav img{
+    width: 48px;
+    vertical-align: middle;
+    padding: 0px 1vw;
 }
 .merch_titulo{
     position: absolute;
@@ -157,4 +161,190 @@ width: 20%;
 }
 .footer img{
     width: 5%;
+}
+.barras{
+    width: 100%;
+    position: absolute;
+}
+.barras img{
+    width: 100%;
+}
+#banner{
+    background-image:
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_rojo.png);
+    background-position: 
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        cover;
+    background-repeat: no-repeat;
+}
+#discografia {
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_verde.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+}
+#fechas{
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_violeta.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+}
+#galeria{
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_gris.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+}
+#comunidad{
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_amarillo.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+}
+#miembros{
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_blanco.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+    padding: 300px;
+}
+#vito{
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_amarillo.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+}
+#lauti{
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_cian.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+}
+#alexis{
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_violeta.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+}
+#marco{
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_rojo.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+}
+#pipo{
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_verde.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+}
+.tienda{
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_blanco.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+    padding: 10vw 0px
 }
