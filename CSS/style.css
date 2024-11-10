@@ -22,13 +22,13 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 40px;
-    font-size: 200%;
+    padding: 0 3vw;
+    font-size: 1.7vw;
 }
 
 nav {
     background-color: #ab1111;
-    padding: 18px;
+    padding: 1vw;
 }
 
 h1{
@@ -38,7 +38,7 @@ h1{
     font-family: "Kanit", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 80px;
+    font-size: 6vw;
 }
 p{
     text-align: center;
@@ -47,20 +47,22 @@ p{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: xx-large;
+    font-size: 2vw;
 }
 h2{
     text-align: center;
+    text-transform: none;
     color: aliceblue;
     font-family: "Courier Prime", monospace;
     font-weight: 700;
     font-style: normal;
-    font-size: xx-large;
+    font-size: 2vw;
     background-image: url(../IMG/fondo_texto.png);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 20px 0px;
+    padding: 2vw 0;
+    width: 100%;
 }
 
 .logo{
@@ -106,18 +108,18 @@ h2{
     background-size: 95%;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 20px
+    padding: 1.5vw
 }
 .redes img{
-    width: 20%;
-    padding: 0px 20px;
+    width: 100%;
+    padding: 0px 1.5vw;
 }
 .newsletter{
     display: flex;
     justify-content: left;
     align-items: center;
     background-color: black;
-    padding: 0px 50px;
+    padding: 0 5vw;
 }
 .imagen_nav{
     display: flex;
@@ -125,25 +127,37 @@ h2{
     align-items: center;
 }
 .imagen_nav img{
-    width: 48px;
+    width: 2.5vw;
     vertical-align: middle;
     padding: 0px 1vw;
 }
-.merch_titulo{
-    position: absolute;
-    top: 40%;
+.seccion_pagina_titulo{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}.seccion_pagina_titulo img{
+    width: 100%;
+}
+.seccion_pagina_titulo h1{
+    position: absolute;
+    padding: 6vw;
+    width: fit-content;
+    background-image: url(../IMG/fondo_texto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .navigation{
     position: sticky;
+    z-index: 10;
     top: 0px;
 }
 .seccion_tienda{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 0px;
+    padding: 2vw 0;
     width: 100%;
 }
 .item{
@@ -151,7 +165,7 @@ width: 20%;
 }
 .item img{
     background-color: black;
-    padding: 30px 0px;
+    padding: 3vw 0;
     width: 100%;
 }
 
@@ -180,6 +194,9 @@ width: 20%;
         100%,
         cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #discografia {
     background-image:
@@ -255,7 +272,7 @@ width: 20%;
         100%,
         cover;
     background-repeat: no-repeat;
-    padding: 300px;
+    padding: 15vw;
 }
 #vito{
     background-image:
@@ -346,5 +363,62 @@ width: 20%;
         100%,
         cover;
     background-repeat: no-repeat;
-    padding: 10vw 0px
+    padding: 10vw 0px;
+}
+.login{
+    background-image:
+        url(../IMG/Barras_abajo.png),
+        url(../IMG/Barras_arriba.png),
+        url(../IMG/fondo_vik_blanco.png);
+    background-position: 
+        top center,
+        bottom center,
+        center; 
+    background-size: 
+        100%,
+        100%,
+        cover;
+    background-repeat: no-repeat;
+    padding: 10vw 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.inicio_sesion_card{
+    background-color: black;
+    border-radius: 1vw;
+    padding: 2vw;
+    width: 40%;
+}
+.etiqueta_campo_login{
+    color: aliceblue;
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+.campo_login{
+    color: black;
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.div_login{
+    padding: 1vw;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+.post{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #ab1111;
+    border-radius: 1vw;
+}
+.post_comentarios ul{
+    list-style: none ;
 }
