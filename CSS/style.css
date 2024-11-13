@@ -18,11 +18,7 @@ a:visited {
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3vw;
+
 }
 
 nav {
@@ -153,6 +149,13 @@ h2{
     top: 0px;
     font-size: 1.7vw;
 }
+.navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+}
 .seccion_tienda{
     display: flex;
     justify-content: space-evenly;
@@ -162,6 +165,9 @@ h2{
 }
 .item{
 width: 20%;
+display: flex;
+flex-direction: column;
+text-align: center;
 }
 .item img{
     background-color: black;
@@ -353,7 +359,7 @@ width: 20%;
     background-image:
         url(../IMG/Barras_abajo.png),
         url(../IMG/Barras_arriba.png),
-        url(../IMG/fondo_vik_blanco.png);
+        url(../IMG/fondo_vik_cian.png);
     background-position: 
         top center,
         bottom center,
@@ -477,7 +483,7 @@ h4{
     background-image:
         url(../IMG/Barras_abajo.png),
         url(../IMG/Barras_arriba.png),
-        url(../IMG/fondo_vik_blanco.png);
+        url(../IMG/fondo_vik_amarillo.png);
     background-position: 
         top center,
         bottom center,
@@ -495,3 +501,37 @@ h4{
 .seccion_posts img{
     width: 100%;
 }
+#carrito{
+    position: fixed;
+    right: 20px;
+    top: 60px;
+    width: 30%;
+    padding: 1vw;
+    background-color: black;
+    border-radius: 1vw ;
+    border: 1px solid aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 2vw;
+
+}
+.carrito-escondido{
+    transform: translateX(150%);
+}
+.carrito-visible{
+    transform: translateX(0);
+}
+#carrito-icono {
+    background: none;     /* Sin fondo */
+    border: none;         /* Sin borde */
+    padding: 0;           /* Sin padding */
+    margin: 0;            /* Sin margen */
+    outline: none;        /* Sin contorno al hacer clic */
+    font-size: 1.5rem;    /* Ajusta el tamaño del ícono */
+    cursor: pointer;      /* Cambia el cursor para indicar que es clickeable */
+    color: inherit;       /* Toma el color de su elemento padre */
+    appearance: none;     /* Elimina cualquier estilo específico del navegador */
+  }
+  span{
+    color: aliceblue;
+  }

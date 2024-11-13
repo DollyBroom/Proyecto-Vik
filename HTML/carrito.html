@@ -25,10 +25,17 @@
             </li>
         </ul>
     </nav>   
-    <main>
-        <section>
+    <main style="background-color: black;">
+        <h1>Carrito de Compras</h1>
+    <div id="carrito" class="carrito-escondido">
+        <ul id="carrito-lista"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </div>
+    <a href="tienda.html">Volver a la Tienda</a>
 
-        </section>
+    <script src="carrito.js"></script>
     </main>
 </body>
 </html>
