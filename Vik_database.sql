@@ -8,6 +8,7 @@ CREATE TABLE Usuarios (
     nombre VARCHAR(50) NOT NULL,
     correo VARCHAR(100) UNIQUE NOT NULL,
     contraseña VARCHAR(255) NOT NULL,
+    rol ENUM('normal', 'admin') NOT NULL DEFAULT 'normal',
     fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -19,6 +20,7 @@ CREATE TABLE Posts (
     contenido TEXT NOT NULL,
     fecha_publicacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario) ON DELETE SET NULL
+
 );
 
 
@@ -110,3 +112,8 @@ CREATE TABLE Interacciones (
     fecha_interaccion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario) ON DELETE SET NULL
 );
+
+datasource db {
+  provider = "postgresql"
+  url      = env("mysql://hostname:sa4@HOST:3306/Vik_datbase.sql")
+}
