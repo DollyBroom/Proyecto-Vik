@@ -424,9 +424,9 @@ text-align: center;
     display: flex;
     justify-content: center;
     width: 70%;
-    background-color: #ab1111;
+    background-color: black;
     border-radius: 1vw;
-    margin: 2vw 0;
+    margin: 2vw;
 }
 .post_titulo{
     color: aliceblue;
