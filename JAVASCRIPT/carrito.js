@@ -64,3 +64,15 @@ function vaciarCarrito(){
     cart = [];
     actualizarCarrito();
 }
+
+function finalizarCompra() {
+  if (cart.length === 0) {
+      alert("El carrito está vacío.");
+      return;
+  }
+  // Mostrar mensaje de confirmación de compra
+  alert("Compra finalizada. Gracias por su compra.");
+
+  // Vaciar el carrito
+  vaciarCarrito();
+}
